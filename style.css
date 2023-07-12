@@ -1,0 +1,224 @@
+/* Reseting default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* font set to 'Comic Sans MS' */
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Centering the content horizontally */
+  }
+  
+  header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #555;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Centering the list items horizontally */
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555; /* Applying a hover effect */
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+    padding: 40px;
+    color: #fff;
+    transition: background 0.5s ease-in-out; /* Adding transition for the background */
+    position: relative;
+ }
+  
+  section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #555;
+  }
+  
+  #home {
+    background: linear-gradient(45deg, #ffd700, #ffa500, #ff8c00); /*gradient colors */
+  }
+  
+  #about {
+    background: linear-gradient(45deg, #00b8a9, #a6f77b);
+  }
+  
+  #gallery {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  }
+  
+  #facts {
+    background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: #555;
+    margin-top: 10px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centering the images horizontally */
+    margin-top: 20px;
+  }
+  
+  .image-container div {
+    margin: 10px; /* Reducing the distance between images */
+  }
+  
+  .image-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.1);
+  }
+  
+  .image-container .candy-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .image-container:hover .candy-name {
+    opacity: 1;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center; /* Centering the logo vertically */
+    justify-content: center; /* Centering the logo horizontally */
+  }
+  
+  .logo::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #555;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain; /* Adjusting the object-fit property to fit the logo */
+    margin-right: 10px; /* Adding margin to create spacing between logo and the contact form */
+  }
+  
+  .contact {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the form horizontally */
+  }
+  
+  .contact form {
+    border: 2px solid #fff; /* Adding border to the form */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Creating a floating effect with box-shadow */
+  }
+  
+  .contact label, .contact input, .contact input[type="submit"] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  .contact input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .contact input[type="submit"]:hover {
+    background-color: #555;
+  }
+  
+  footer p {
+    margin-top: 20px;
+  }
+  
+  #facts ul {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  /* Smooth transition between section backgrounds */
+  section:not(:last-child) {
+    transition: background 0.5s ease-in-out;
+  } 
